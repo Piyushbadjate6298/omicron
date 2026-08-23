@@ -1,0 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
+import { gallery } from '../../data/fleet'
+import './Gallery.css'
+export default function Gallery(){return <div className="page"><section className="page-hero"><div className="container"><div className="eyebrow">06 / Gallery</div><h1>Journeys look <span>better</span> in motion.</h1><p>A visual wall built from the supplied Omicron site gallery assets, refreshed into a cleaner premium presentation.</p></div></section><section className="section gallery-section"><div className="container"><div className="masonry">{gallery.map((src,i)=><figure key={src} className={i===0||i===4?'tall':''}><img src={src} alt={`Omicron Journeys gallery ${i+1}`} loading="lazy"/><figcaption><span>Omicron Journeys</span><ArrowUpRight size={17}/></figcaption></figure>)}</div></div></section></div>}

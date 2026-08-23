@@ -1,0 +1,87 @@
+export const categories = [
+  { key: 'hatchback', label: 'Hatchbacks', eyebrow: 'Smart city travel' },
+  { key: 'sedan', label: 'Sedans', eyebrow: 'Executive comfort' },
+  { key: 'suv', label: 'SUVs', eyebrow: 'Space & presence' },
+  { key: 'tempo', label: 'Tempo Travellers', eyebrow: 'Group journeys' },
+  { key: 'minibus', label: 'Mini Buses', eyebrow: 'Larger groups' },
+  { key: 'bus', label: 'Buses', eyebrow: 'High-capacity travel' },
+  { key: 'volvo', label: 'Volvo', eyebrow: 'Long-haul comfort' },
+  { key: 'luxury', label: 'Luxury Cars', eyebrow: 'Signature arrivals' },
+  { key: 'self-drive', label: 'Self Drive', eyebrow: 'Freedom on demand' },
+]
+
+const img = {
+  jazz: 'https://i.ndtvimg.com/i/2017-08/2018-honda-jazz-facelift_827x510_41502711710.jpg',
+  glanza: 'https://cdn-s3.autocarindia.com/Toyota/Glanza/_DSC5020.JPG',
+  baleno: 'https://cdn-s3.autocarindia.com/Toyota/Glanza/_DSC5020.JPG',
+  wagonr: 'https://stimg2.cardekho.com/images/carNewsEditorImages/930x620/20201224_133406/26524/features0.jpg',
+  i20: 'https://stimg2.cardekho.com/images/carNewsEditorImages/930x620/20201224_133406/26524/features0.jpg',
+  vento: 'https://imgd.aeplcdn.com/1280x720/cw/ec/20787/Volkswagen-Vento-Right-Front-Three-Quarter-60439.jpg?t=224919767&wm=0',
+  urbania: 'https://www.carrentaldelhi.com/wp-content/uploads/2024/06/10-seater-car-on-rent-in-delhi.webp',
+  winger: 'https://www.elcarrocolombiano.com/wp-content/uploads/2023/06/20230611-RENAULT-MAS-ANTIGUO-AUN-EN-PRODUCCION-TRAFIC-1980-TATA-WINGER-2023-02-750x522.jpg',
+  rangeRover: 'https://cdn-s3.autocarindia.com/legacy/cdni/ExtraImages/20180723034248_X3-v-Q5-v-XC60-v-GLC-v-DS-3.jpg?q=75&w=1200',
+  luxurySedan: 'https://hurryupcabs.com/images/category_content/mercedes-benz-suv-web.webp',
+  luxurySuvs: 'https://cdn-s3.autocarindia.com/legacy/cdni/ExtraImages/20180723034248_X3-v-Q5-v-XC60-v-GLC-v-DS-3.jpg?q=75&w=1200',
+  roadCars: 'https://omicronjourneys.com/wp-content/uploads/2024/08/3.jpg',
+  bus: 'https://omicronjourneys.com/wp-content/uploads/2024/08/bus-7.jpg',
+  gallery1: 'https://omicronjourneys.com/wp-content/uploads/2024/08/1.jpg',
+  gallery2: 'https://omicronjourneys.com/wp-content/uploads/2024/08/2.jpg',
+  gallery3: 'https://omicronjourneys.com/wp-content/uploads/2024/08/8.jpg',
+  gallery4: 'https://omicronjourneys.com/wp-content/uploads/2024/08/3.jpg',
+  gallery5: 'https://omicronjourneys.com/wp-content/uploads/2024/08/4.jpg',
+  gallery6: 'https://omicronjourneys.com/wp-content/uploads/2024/08/5.jpg',
+}
+
+export const fleet = [
+  { category:'hatchback', name:'Honda Jazz', capacity:'4 + 1', rate:12, unit:'/ km', image:img.jazz },
+  { category:'hatchback', name:'Maruti Swift', capacity:'4 + 1', rate:11, unit:'/ km', image:img.i20 },
+  { category:'hatchback', name:'Toyota Glanza', capacity:'4 + 1', rate:11, unit:'/ km', image:img.glanza },
+  { category:'hatchback', name:'Maruti Baleno', capacity:'4 + 1', rate:11, unit:'/ km', image:img.baleno },
+  { category:'hatchback', name:'Hyundai i20', capacity:'4 + 1', rate:11, unit:'/ km', image:img.i20 },
+  { category:'hatchback', name:'Maruti Wagon R', capacity:'4 + 1', rate:11, unit:'/ km', image:img.wagonr },
+  { category:'sedan', name:'Volkswagen Vento', capacity:'4 + 1', rate:13, unit:'/ km', image:img.vento },
+  { category:'sedan', name:'Honda Amaze', capacity:'4 + 1', rate:12, unit:'/ km', image:img.luxurySedan },
+  { category:'sedan', name:'Toyota Etios', capacity:'4 + 1', rate:12, unit:'/ km', image:img.roadCars },
+  { category:'sedan', name:'Maruti Dzire', capacity:'4 + 1', rate:11, unit:'/ km', image:img.luxurySedan },
+  { category:'suv', name:'Toyota Crysta', capacity:'7 + 1', rate:17, unit:'/ km', image:img.roadCars },
+  { category:'suv', name:'Kia Carens', capacity:'7 + 1', rate:15, unit:'/ km', image:img.luxurySuvs },
+  { category:'suv', name:'Mahindra Scorpio', capacity:'8 + 1', rate:15, unit:'/ km', image:img.luxurySuvs },
+  { category:'suv', name:'Maruti Ertiga', capacity:'7 + 1', rate:14, unit:'/ km', image:img.roadCars },
+  { category:'tempo', name:'Tata Winger', capacity:'10 + 1', rate:24, unit:'/ km', image:img.winger },
+  { category:'tempo', name:'Force Urbania', capacity:'17 + 1', rate:35, unit:'/ km', image:img.urbania },
+  { category:'tempo', name:'Force Tempo Traveller', capacity:'17 + 1', rate:27, unit:'/ km', image:img.urbania },
+  { category:'tempo', name:'Force Tempo Traveller', capacity:'20 + 1', rate:30, unit:'/ km', image:img.urbania },
+  { category:'tempo', name:'Force Tempo Traveller', capacity:'26 + 1', rate:38, unit:'/ km', image:img.urbania },
+  { category:'minibus', name:'Tata Mini AC Bus', capacity:'26 + 1', rate:45, unit:'/ km', image:img.bus },
+  { category:'minibus', name:'Non AC Mini Bus', capacity:'35 + 1', rate:42, unit:'/ km', image:img.bus },
+  { category:'bus', name:'Eicher Non AC Bus', capacity:'40 + 1', rate:45, unit:'/ km', image:img.bus },
+  { category:'bus', name:'Eicher AC Bus', capacity:'40 + 1', rate:80, unit:'/ km', image:img.bus },
+  { category:'volvo', name:'Bus Non AC', capacity:'50 + 1', rate:52, unit:'/ km', image:img.bus },
+  { category:'volvo', name:'AC Volvo Bus', capacity:'45 + 1', rate:90, unit:'/ km', image:img.bus },
+  { category:'luxury', name:'Range Rover', capacity:'4 + 1', rate:250, unit:'/ km', image:img.rangeRover },
+  { category:'luxury', name:'Audi Q7', capacity:'4 + 1', rate:110, unit:'/ km', image:img.luxurySuvs },
+  { category:'luxury', name:'BMW 520d', capacity:'4 + 1', rate:70, unit:'/ km', image:img.luxurySedan },
+  { category:'luxury', name:'Toyota Fortuner', capacity:'6 + 1', rate:50, unit:'/ km', image:img.luxurySuvs },
+  { category:'luxury', name:'Mahindra Thar', capacity:'4 + 1', rate:30, unit:'/ km', image:img.roadCars },
+  { category:'self-drive', name:'Maruti Swift', capacity:'4 + 1', rate:2000, unit:'/ day', image:img.i20 },
+  { category:'self-drive', name:'Honda Amaze', capacity:'4 + 1', rate:2000, unit:'/ day', image:img.luxurySedan },
+  { category:'self-drive', name:'Bolero Neo', capacity:'7 + 1', rate:3000, unit:'/ day', image:img.luxurySuvs },
+  { category:'self-drive', name:'Toyota Innova', capacity:'7 + 1', rate:3000, unit:'/ day', image:img.roadCars },
+  { category:'self-drive', name:'Mahindra Scorpio', capacity:'8 + 1', rate:3000, unit:'/ day', image:img.luxurySuvs },
+]
+
+export const services = [
+  { title:'Outstation', text:'Comfort-first intercity travel for weekend escapes, family trips and business runs.', icon:'route' },
+  { title:'Airport Rides', text:'Reliable airport transfers with a simple inquiry flow and doorstep pickup.', icon:'plane' },
+  { title:'City Rides', text:'Professional vehicle rentals for meetings, errands, events and local movement.', icon:'map' },
+  { title:'Hotels & Events', text:'Guest transfers, event movement and premium arrivals for hospitality teams.', icon:'hotel' },
+]
+
+export const stats = [
+  { value:'20,000+', label:'Customers' },
+  { value:'1,400+', label:'Tours Completed' },
+  { value:'16,800+', label:'Satisfied Clients' },
+  { value:'17,000+', label:'SKUs' },
+]
+
+export const gallery = [img.gallery1, img.gallery2, img.gallery3, img.gallery4, img.gallery5, img.gallery6]

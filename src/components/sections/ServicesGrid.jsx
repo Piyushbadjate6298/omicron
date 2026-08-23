@@ -1,0 +1,5 @@
+import { Plane, Route, Map, Hotel, ArrowUpRight } from 'lucide-react'
+import { services } from '../../data/fleet'
+import './ServicesGrid.css'
+const icons={plane:Plane,route:Route,map:Map,hotel:Hotel}
+export default function ServicesGrid({onInquiry}){return <section className="section services-section"><div className="container"><div className="section-head"><div><div className="eyebrow">Ways to travel</div><h2 className="section-title">One fleet. <span className="accent">Many journeys.</span></h2></div><button className="btn btn-ghost" onClick={()=>onInquiry()}>Ask for a custom plan <ArrowUpRight size={17}/></button></div><div className="service-grid">{services.map((s,i)=>{const Icon=icons[s.icon];return <article className="service-card reveal" key={s.title}><div className="service-icon"><Icon size={24}/></div><div><div className="service-number">0{i+1}</div><h3>{s.title}</h3><p>{s.text}</p></div><button className="service-link" onClick={()=>onInquiry(null,s.title)}>Request <ArrowUpRight size={16}/></button></article>})}</div></div></section>}
