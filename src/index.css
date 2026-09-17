@@ -219,41 +219,61 @@ img {
   }
 }
 .floating-wa,
+.floating-insta,
 .floating-call {
   position: fixed;
   z-index: 55;
-  bottom: 20px;
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-weight: 900;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.floating-wa:hover,
+.floating-insta:hover,
+.floating-call:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
 }
 .floating-wa {
-  left: 20px;
+  right: 20px;
+  bottom: 20px;
   background: #25d366;
   color: #fff;
-  font-size: 0.75rem;
+}
+.floating-insta {
+  right: 20px;
+  bottom: 86px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
 }
 .floating-call {
   right: 20px;
+  bottom: 152px;
   background: var(--gold);
   color: var(--ink);
   font-size: 1.25rem;
 }
 @media (max-width: 520px) {
   .floating-wa,
+  .floating-insta,
   .floating-call {
     width: 48px;
     height: 48px;
-    bottom: 14px;
   }
   .floating-wa {
-    left: 12px;
+    right: 14px;
+    bottom: 14px;
+  }
+  .floating-insta {
+    right: 14px;
+    bottom: 70px;
   }
   .floating-call {
-    right: 12px;
+    right: 14px;
+    bottom: 126px;
   }
 }
