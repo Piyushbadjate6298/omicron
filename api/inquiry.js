@@ -12,6 +12,7 @@ export default async function handler(req, res) {
       phone,
       email,
       service,
+      subService,
       vehicle,
       date,
       persons,
@@ -77,6 +78,11 @@ export default async function handler(req, res) {
           <p>
             <strong>Service:</strong>
             ${escapeHtml(service || 'Not specified')}
+          </p>
+
+          <p>
+            <strong>Sub-Service:</strong>
+            ${escapeHtml(subService || 'Not specified')}
           </p>
 
           <p>
